@@ -2,19 +2,20 @@
 
 namespace App\Http\Middleware;
 
-use Fideloper\Proxy\TrustProxies as Middleware;
+use Illuminate\Http\Middleware\TrustProxies as Middleware;
 use Illuminate\Http\Request;
 
-class TrustProxies
+class TrustProxies extends Middleware
 {
     /**
-     * The trusted proxies for this application.
+     * Trust all proxies (Railway, Cloudflare, dll)
      *
      * @var array|string|null
      */
-    protected $proxies;
+    protected $proxies = '*';
+
     /**
-     * The headers that should be used to detect proxies.
+     * Use all forwarded headers
      *
      * @var int
      */
