@@ -4,7 +4,7 @@
     "buildCommand": "composer install --no-dev --optimize-autoloader && npm install && npm run build"
   },
   "deploy": {
-    "startCommand": "php artisan migrate --force || true && php artisan storage:link || true && php artisan serve --host=0.0.0.0 --port=$PORT",
+    "startCommand": "php artisan migrate --force || true && php artisan storage:link || true",
     "healthcheckPath": "/",
     "healthcheckTimeout": 300
   }
