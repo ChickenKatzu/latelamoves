@@ -13,11 +13,11 @@ storage/framework/views/
 storage/logs/*
 !storage/logs/.gitkeep
 /public/hot
-# /public/storage     # Comment ini jika perlu
-# public/build        # Comment ini dulu untuk test
-# public/css/app.css  # HAPUS atau COMMENT baris ini
-# public/js/app.js    # HAPUS atau COMMENT baris ini
-# /public/assets      # HAPUS atau COMMENT baris ini
+/public/storage
+public/build
+public/css/app.css
+public/js/app.js
+/public/assets
 /bootstrap/cache/*
 *.log
 npm-debug.log
